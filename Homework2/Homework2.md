@@ -128,18 +128,18 @@ if __name__ == '__main__':
 
 For the forward difference, the error term is given by:
 $$
-E_{f}  = \frac{h}{2}f''(x)
+E_{f}  = h f''(x)
 $$
 For the central difference, the error term is given by:
 $$
-E_{f}  = \frac{h^2}{24}f'''(x)
+E_{f}  = h^2 f'''(x)
 $$
 Therefore, we get:
 $$
-|\frac{h}{2}f''(x)| < |\frac{h^2}{24}f'''(x)|
+|h f''(x)| < |h^2 f'''(x)|
 $$
 
 So, 
 $$
-h > 6|\frac{f''(x)}{f'''(x)}|
+h > |\frac{f''(x)}{f'''(x)}|
 $$
