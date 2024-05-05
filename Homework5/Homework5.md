@@ -58,6 +58,7 @@ print("The period with the maximum power is", len(spot) / frequency)
 
 ### Result:
 ![](./Graph/sunspot.png)
+The estimated period is about 11 years.
 ![](./Graph/sunspot_dft.png)
 The period is 131 months.
 
@@ -97,4 +98,4 @@ plt.show()
 ### Result
 ![](./Graph/dow_10p.png)
 ![](./Graph/dow_2p.png)
-The curve has been smoothed.
+The curve has been smoothed. Actually, it‘s a low-pass filter.
