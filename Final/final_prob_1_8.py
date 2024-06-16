@@ -38,7 +38,7 @@ A = (
 
 # Initial conditions
 x_alpha = np.full((S,), 0.01)
-x_alpha[5] = x_alpha[12] = 0.01 * 0.45
+x_alpha[5] = x_alpha[11] = 0.01 * 0.45
 x_alpha[6] = x_alpha[10] = 0.15 * 0.45
 x_alpha[7] = x_alpha[9] = 0.05 * 0.45
 x_alpha[8] = 0.3 * 0.45
@@ -76,7 +76,7 @@ alpha = np.arange(1, S + 1, 1)
 # Plot 3D
 fig = plt.figure(dpi=300)
 ax = fig.add_subplot(projection="3d")
-for i in [240, 180, 120, 60, 1]:
+for i in [240, 180, 120, 60, h]:
     ax.plot(alpha, i * np.ones(S), xpoints[:, int(i / h - 1)])
 ax.set_xlabel(r"$\alpha$")
 ax.set_ylabel("Time")
@@ -87,7 +87,7 @@ plt.savefig(f"./Graph/solitary_waves_{r_2}.png")
 
 # Plot 2D
 # plt.figure(dpi=300)
-# for i in [240, 180, 120, 60, 1]:
+# for i in [240, 180, 120, 60, h]:
 #     plt.plot(alpha, xpoints[:, int(i / h - 1)], label=f"t={i}")
 # plt.xlabel(r"$\alpha$")
 # plt.ylabel(r"$x_{\alpha}$")
